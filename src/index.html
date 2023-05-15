@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Leadership Board</title>
 </head>
 <body>
-    <h1>Hello Foga</h1>
+    <header>
+        <div class="container">
+            <h1>Leaderboard</h1>
+        </div>
+    </header>
+    <main>
+        <div class="left-details">
+            <div class="container">
+                <div class="top__left-details"><h2>Recent Scores</h2> <button id="refresh">Refresh</button></div>
+            </div>
+        </div>
+
+        <div class="right-details">
+            <div class="container">
+                <h2 class="top__right-details">Add Your Details</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="text" name="score" id="score" placeholder="Your Score">
+                    <button id="add-score">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
