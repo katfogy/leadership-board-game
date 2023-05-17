@@ -43,6 +43,7 @@ header .container {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  gap:20px
 }
 
 .top__left-details {
@@ -83,6 +84,20 @@ input[type="text"] {
 button:hover {
   background-color: var(--seconadary);
 }
+ul{
+  list-style-type: none;
+}
+.score{
+  margin-block: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.score:nth-child(even){
+  background-color: gainsboro;
+}
+
 
 @media (min-width: 700px) {
   main {
