@@ -2,7 +2,7 @@ class LeaderBoard {
   constructor(name, score) {
     this.name = name;
     this.score = score;
-    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fghdettBoc/scores';
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fgcdettBoc/scores';
   }
 
   clearInput() {
@@ -13,22 +13,26 @@ class LeaderBoard {
   async addScores() {
     const user = this.name.value;
     const score = this.score.value;
-    const options = {
-      method: 'POST',
-      body: JSON.stringify({
-        user,
-        score,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
+    if (user === '' || score === '') {
+      alert('Input Field cannot be empty');
+    } else {
+      const options = {
+        method: 'POST',
+        body: JSON.stringify({
+          user,
+          score,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
 
-    if (this.name && this.score) {
-      await fetch(this.url, options).then((res) => res.json());
+      if (this.name && this.score) {
+        await fetch(this.url, options).then((res) => res.json());
+      }
+      this.clearInput();
+      this.displayScores();
     }
-    this.clearInput();
-    this.displayScores();
   }
 
   async getScores() {
