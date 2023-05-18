@@ -52,7 +52,7 @@ class LeaderBoard {
       leaderscores.appendChild(msg);
     } else {
       list.result
-        .sort((a, b) =>  b.score-a.score)
+        .sort((a, b) => b.score - a.score)
         .forEach((score) => {
           leaderscores.innerHTML += `
                     <li class="score">${score.user}: ${score.score}</li>
