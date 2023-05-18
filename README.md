@@ -86,10 +86,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="https://katfogy.github.io/leadership-board-game/"></a>
+## 🚀 Live Demo <a name="https://katfogy.github.io/leadership-board-game/dist/"></a>
 
 
-- [[Live Demo Link](https://katfogy.github.io/leadership-board-game/)]
+- [[Live Demo Link](https://katfogy.github.io/leadership-board-game/dist/)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
