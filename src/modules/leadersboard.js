@@ -2,7 +2,7 @@ class LeaderBoard {
   constructor(name, score) {
     this.name = name;
     this.score = score;
-    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fvcdettBod/scores';
+    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fvcdettGrAcE/scores';
   }
 
   clearInput() {
@@ -15,6 +15,8 @@ class LeaderBoard {
     const score = this.score.value;
     if (user === '' || score === '') {
       alert('Input Field cannot be empty');
+    } else if (score > 100) {
+      alert('Score Cannot be more than 100');
     } else {
       const options = {
         method: 'POST',
